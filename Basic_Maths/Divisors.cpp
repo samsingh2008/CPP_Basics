@@ -9,7 +9,7 @@
 using namespace std;
 vector<int> findDivisors(int a){
     vector<int> v;
-    for(int i=1;i<=sqrt(a);i++){
+    for(int i=1;i*i<=a;i++){
         if(a%i==0){
             v.push_back(i);
             if(i!=a/i){
